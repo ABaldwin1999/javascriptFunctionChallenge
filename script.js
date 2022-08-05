@@ -15,7 +15,7 @@ isNumberPositive(10); // returns true
 //and converts it into an age.
 
 convertDaysToAge = (num) =>{
-    return Math.floor(num/365);
+    return console.log(Math.floor(num/365));
 }
 convertDaysToAge(3650); // returns 10
 convertDaysToAge(6570); // returns 18
@@ -33,3 +33,11 @@ getLargestNumber = (num0 ,num1, num2) =>{
 }
 getLargestNumber(2 ,1, 4); // returns 4
 getLargestNumber(6,2,3); // returns 6
+
+//Write a function that takes an array of names 
+//and returns the last name from the array of names.
+
+getLastName = (array) =>{return console.log(array[array.length -1])}
+
+getLastName(["Charlie", "Rob", "Andy"]); // returns “Andy”
+getLastName(["Ash","Stu"]); // returns "Stu"
