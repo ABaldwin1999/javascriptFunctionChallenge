@@ -19,3 +19,17 @@ convertDaysToAge = (num) =>{
 }
 convertDaysToAge(3650); // returns 10
 convertDaysToAge(6570); // returns 18
+
+//Write a function that takes three numbers and returns the largest of the three numbers.
+
+getLargestNumber = (num0 ,num1, num2) =>{
+    numArray = [num0,num1,num2];
+    for(let i = 0; i < numArray.length -1; i++){
+        if(numArray[i+1]>= numArray[0]){
+            numArray[0] = numArray[i+1];
+        }
+    }
+    return console.log(numArray[0]);
+}
+getLargestNumber(2 ,1, 4); // returns 4
+getLargestNumber(6,2,3); // returns 6
