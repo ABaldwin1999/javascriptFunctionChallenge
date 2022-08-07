@@ -3,9 +3,9 @@
 
 isNumberPositive = (num) =>{
     if(num >= 0){
-        return console.log("True");
+        return True;
     }else if(num <0){
-        return console.log("False");
+        return False;
     } 
 }
 isNumberPositive(-1); // returns false
@@ -15,7 +15,7 @@ isNumberPositive(10); // returns true
 //and converts it into an age.
 
 convertDaysToAge = (num) =>{
-    return console.log(Math.floor(num/365));
+    return Math.floor(num/365);
 }
 convertDaysToAge(3650); // returns 10
 convertDaysToAge(6570); // returns 18
@@ -23,13 +23,7 @@ convertDaysToAge(6570); // returns 18
 //Write a function that takes three numbers and returns the largest of the three numbers.
 
 getLargestNumber = (num0 ,num1, num2) =>{
-    numArray = [num0,num1,num2];
-    for(let i = 0; i < numArray.length -1; i++){
-        if(numArray[i+1]>= numArray[0]){
-            numArray[0] = numArray[i+1];
-        }
-    }
-    return console.log(numArray[0]);
+    return Math.max(num0,num1 ,num2);
 }
 getLargestNumber(2 ,1, 4); // returns 4
 getLargestNumber(6,2,3); // returns 6
@@ -37,7 +31,7 @@ getLargestNumber(6,2,3); // returns 6
 //Write a function that takes an array of names 
 //and returns the last name from the array of names.
 
-getLastName = (array) =>{return console.log(array[array.length -1])}
+getLastName = (array) =>{return array[array.length -1]}
 
 getLastName(["Charlie", "Rob", "Andy"]); // returns “Andy”
 getLastName(["Ash","Stu"]); // returns "Stu"
@@ -52,7 +46,7 @@ allNumbersPositive = (numArray) =>{
             arrayPositive = false;
         }
     }
-    return console.log(arrayPositive);
+    return arrayPositive;
 }
 
 allNumbersPositive([2,4,5]); // returns true
